@@ -45,4 +45,12 @@ def extract_weather_data(url : str) -> list:
         
     return data
 
-extract_weather_data(url)
+
+def extract_path_from_file(dir, filename):
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PATH = BASE_DIR / dir / filename
+    
+    return DATA_PATH
+
+    
+# extract_weather_data(url)
